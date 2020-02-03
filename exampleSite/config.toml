@@ -1,4 +1,4 @@
-baseurl = "http://themes.gohugo.io/theme/bootstrap/"
+baseurl = "https://example.com"
 languageCode = "en-us"
 title = "Hugo Themes"
 author = "Steve Francia"
@@ -29,22 +29,19 @@ googleAnalytics = "UA-XXXXXXX-1"
     pre = "<i class='fa fa-info-circle'></i>"
     weight = -90
     identifier = "about-me"
-    url = "/page/about-me"
+    url = "/about"
 
-[[menu.footer]]
-    name = "DISCLAIMER"
-    weight = -110
-    identifier = "disclaimer"
-    url = "/page/disclaimer/"
 
-[[menu.footer]]
-    name = "LICENSE"
-    weight = -120
-    identifier = "license"
-    url = "/page/license/"
-
-[params.widgets]
-  recent_articles = true
-  categories = true
-  tags = true
-  tag_cloud = true
+# You can have link at the footer as below
+# [[menu.footer]]
+#     name = "DISCLAIMER"
+#     weight = -110
+#     identifier = "disclaimer"
+#     url = "/page/disclaimer/"
+# 
+# [[menu.footer]]
+#     name = "LICENSE"
+#     weight = -120
+#     identifier = "license"
+#     url = "/page/license/"
+#

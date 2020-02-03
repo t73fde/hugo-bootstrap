@@ -1,13 +1,9 @@
 {{ partial "head" . }}
-<div class="container post-container">
-  <header>
-    {{ partial "content/h1-title" . }}
-  </header>
-  <ul class="container">
-    {{ range $index, .Paginator.Pages }}
-      <li>{{ partial "content/title-link" . }}</li>
-    {{ end }}
-  </ul>
-  {{ partial "content/pagination.html" . }}
+
+<div class="container">
+  <div class="row">
+    {{ partial "content/related-posts" . }}
+  </div>
 </div>
+
 {{ partial "foot" . }}

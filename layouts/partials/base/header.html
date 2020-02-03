@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md fixed-top site-navbar {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
+<nav class="navbar navbar-expand-md site-navbar {{ .Site.Params.navbarBgColorClass | default .Site.Data.Defaults.navbarBgColorClass }}">
     <a class="navbar-brand text-white" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   <button class="navbar-toggler" 
   type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2"
@@ -9,9 +9,9 @@
     <ul class="nav navbar-nav ml-auto">
       {{ $currentNode := . }} {{ range .Site.Menus.main }}
       <li class="nav-item">
-        <a class="nav-link menu-item" href="{{.URL}}">
+        <a class="nav-link menu-item  no-decoration {{ $.Site.Params.navbarLinkFgColorClass | default $.Site.Data.Defaults.navbarLinkFgColorClass }}" href="{{.URL}}">
           {{ .Pre }}
-          <span class="text-capitalize no-decoration {{ $.Site.Params.navbarLinkFgColorClass | default $.Site.Data.Defaults.navbarLinkFgColorClass }}">{{ .Name }}</span>
+          <span class="text-capitalize">{{ .Name }}</span>
         </a>
       </li>
       {{end}}
